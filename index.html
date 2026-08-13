@@ -4,44 +4,62 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Summer Memories 2026</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Neighborhood Walk</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body onload="addTabFocus()">
   <a href="#main" class="offpage">Skip to Main Content</a>
-  <header>
-   <nav>
-    <ul class="flex">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="neighborhood.html">Neighborhood Walks</a></li>
-        <li><a href="Mountains.html">Trip to the Mountains</a></li>
-      </ul>
-       <img src="images/Glasses_in_air.jpg" width="150" alt="Two friends celebrating with glasses of wine outdoors">
+<header class="home-header">
+    <nav>
+      <h1>Lake Louise and Banff</h1>
+       <div id="image">
+  Hover over an image below to display here.
+</div>
     </nav>
-   
-    <h1>Summer Memories 2026</h1>
   </header>
   <main id="main">
-    <p>
-  This summer was truly special because my best friend came to visit me after 15 years apart.
-  We spent 11 wonderful days together, making unforgettable memories and enjoying every moment.
-</p>
 
-    <p>
-  During her visit, we travelled to
-  <a target="_blank" href="https://parks.canada.ca/pn-np/ab/banff/visit/les10-top10/louise">Lake Louise</a>
-  and explored
-  <a  target="_blank"  href="https://parks.canada.ca/pn-np/ab/banff">Banff National Park</a>.
-   and visited the beautiful Muttart Conservatory, and enjoyed wonderful walks around our neighbourhood with our children.
-</p>
+    <div class="grid">
+      <img class = "preview"  src="images/Nature01.jpg" alt="Mountain valley viewed from a high scenic lookout." onmouseover = "upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)"
+onblur="unDo()">
+      <img src="images/Nature02.jpg"
+        alt="Two people relaxing at a mountain viewpoint." onmouseover = "upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)"
+onblur="unDo()">
+      <img class = "preview"  src="images/Nature03.jpg" alt="Forest and mountains under a bright blue sky." onmouseover = "upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)"
+onblur="unDo()">
+      <img class = "preview"  src="images/Nature04.jpg" alt="Mountain river surrounded by evergreen trees." onmouseover = "upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)"
+onblur="unDo()">
+      <img class = "preview"  src="images/Nature05.jpg" alt="Mountain landscape with forest and scenic viewpoints during a summer hike." onmouseover = "upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)"
+onblur="unDo()">
+      <img class = "preview" src="images/Downtown01.jpg" alt="Evening views of the city with city lights, river, and walking paths." onmouseover = "upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)"
+onblur="unDo()">
 
+    </div>
+<div id="lightbox" class="lightbox">
+
+    <span class="close">&times;</span>
+
+    <div class="lightbox-content">
+
+        <img id="lightbox-img"
+     src="images/Nature01.jpg"
+     alt="Selected gallery image">
+
+        <button id="prev" class="lightbox-arrow">&#10094;</button>
+        <button id="next" class="lightbox-arrow">&#10095;</button>
+
+    </div>
+
+</div>
   </main>
-  <footer>
+   <footer>
   <p>Created by Alina Khalina &copy; 2026.</p>
-  <p>All photographs on this website are my personal property.</p>
-   <p> Please do not copy or use them without my permission. </p>
+  <p>
+    All photographs on this website are my personal property.</p>
+   <p> Please do not copy or use them without my permission.
+  </p>
 </footer>
-
+<script src="js/script.js"></script>
 </body>
 
 </html>
